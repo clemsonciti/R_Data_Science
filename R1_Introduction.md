@@ -1,7 +1,7 @@
 INTRODUCTION TO R PROGRAMMING
 ========================================================
-author: Tue Vu - CyberInfrastructure & Technology Integration (CITI) - CCIT
-date:   12/03/2018
+author: Tue Vu - Advanced Computing and Data Science group- CCIT\CITI
+                 Research Assistant Professor - Glenn Department of Civil Engineering, Clemson University
 
 ### Exercise Link: <https://vuminhtue.shinyapps.io/R3_QA1/>
 ### Survey Link: <https://www.surveymonkey.com/r/26SZF3F>

@@ -4,6 +4,7 @@ author: Tue Vu - CyberInfrastructure & Technology Integration (CITI) - CCIT
 date:   12/03/2018
 
 ### Exercise Link: <https://vuminhtue.shinyapps.io/R3_QA1/>
+### Survey Link: <https://www.surveymonkey.com/r/26SZF3F>
 
 
 1.Input to R

@@ -1,7 +1,7 @@
 INTRODUCTION TO R PROGRAMMING
 ========================================================
 author: Tue Vu - Advanced Computing and Data Science group- CCIT\CITI
-                 Research Assistant Professor - Glenn Department of Civil Engineering, Clemson University
+               - Research Assistant Professor - Glenn Department of Civil Engineering, Clemson University
 
 ### Exercise Link: <https://vuminhtue.shinyapps.io/R3_QA1/>
 ### Survey Link: <https://www.surveymonkey.com/r/26SZF3F>

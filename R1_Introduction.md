@@ -5,7 +5,7 @@ INTRODUCTION TO R PROGRAMMING
 #### Research Assistant Professor - Glenn Department of Civil Engineering, Clemson University
 
 ### Exercise Link: <https://vuminhtue.shinyapps.io/R3_QA1/>
-### Survey Link: <https://www.surveymonkey.com/r/26SZF3F>
+### Survey Link <https://clemson.ca1.qualtrics.com/jfe/form/SV_cAdyi84t74wGwAt>
 
 
 1.Input to R

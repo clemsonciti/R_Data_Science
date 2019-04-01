@@ -253,9 +253,9 @@ Execute some test runs
 ```{r}
 library(ggplot2)
 set.seed(12)
-x <- rnorm(500,mean=0,sd=1)
+x <- rnorm(500000,mean=0,sd=1)
 a <- 30
-b <- rnorm(500,20,2)
+b <- rnorm(500000,20,2)
 y <- a*x+b
 qplot(x,y)
 ```

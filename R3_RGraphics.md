@@ -483,7 +483,7 @@ temp <- ncvar_get(file,"air")
 jet.colors <-colorRampPalette(c( "blue","grey","white","grey","red"))
 
 filled.contour(nlon,nlat1,temp[,,1],
-                color.palette = hsv.colors,
+                color.palette = jet.colors,
                xlab="Longitude",ylab="Latitude",
                plot.axes = {par(usr=c(-180,180,-90,90));map(add=T)},
                key.title = title(main = "R"))

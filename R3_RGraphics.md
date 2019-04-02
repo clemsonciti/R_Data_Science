@@ -405,7 +405,7 @@ Plot shapefile
 ```
 Download shape file data here
 https://hub.arcgis.com/datasets/a21fdb46d23e4ef896f31475217cbb08_1
-Store it in your folder: c:/CLEMSON/GIS/
+Store it in your folder: c:/R/GIS/
 Unzip it to Countries_WGS84/
 ```
 
@@ -420,7 +420,7 @@ library(rgdal)
 library(colorspace)
 library(maps)
 
-setwd('c:/CLEMSON/GIS/Countries_WGS84/')
+setwd('c:/R/GIS/Countries_WGS84/')
 gfile <- readOGR(dsn="Countries_WGS84.shp")
 names(gfile)
 gfile$CNTRY_NAME
@@ -449,7 +449,7 @@ install.packages("raster")
 library(raster)
 library(rgdal)
 
-setwd('c:/CLEMSON/GIS/Raster/Globcover2009_V2.3_Global_/')
+setwd('c:/R/GIS/Raster/Globcover2009_V2.3_Global_/')
 #import raster
 Gcover <- raster("GLOBCOVER_L4_200901_200912_V2.3.tif")
 #plot raster
@@ -472,7 +472,7 @@ install.packages("ncdf4")
 library(ncdf4)
 library(RColorBrewer)
 
-setwd('c:/CLEMSON/GIS/nc/')
+setwd('c:/R/GIS/nc/')
 file <- nc_open("air.mon.ltm.nc")
 nlon <- ncvar_get(file,"lon")
 nlat <- ncvar_get(file,"lat")

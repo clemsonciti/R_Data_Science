@@ -242,6 +242,7 @@ $ R
 - Run R in batch mode
 ```
 $ Rscript a.R
+$ R CMD BATCH a.R # Will write separate output file
 ```
 
 

@@ -200,15 +200,14 @@ Check number of available processing cpus:
 
 ```r
 library(doParallel)
-detectCores()
-cl <- detectCores()-1
+co <- detectCores()-1
+cl <- makeCluster(co)
 registerDoParallel(cl)
 ```
 
 Apply **doParallel** to **foreach**
 
 ```r
-registerDoParallel(cl)
 system.time(foreach(i=1:200, .combine='c') %do% max.eig(i,1))
 system.time(foreach(i=1:200, .combine='c') %dopar% max.eig(i,1))
 stopCluster(cl)
@@ -217,7 +216,8 @@ stopCluster(cl)
 Note, in Linux/Macs, use **doMC** instead of **doParallel**
 ```r
 library(doMC)
-registerDoMC(cores=4)
+registerDoMC(cl)
+stopCluster(cl)
 ```
 
 8.Configure and run R in Clemson University's fastest supercomputer: Palmetto;

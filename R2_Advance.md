@@ -193,6 +193,17 @@ Using parameter **.combine**
 foreach(i=1:4, .combine='c') %do% max.eig(i,1)
 ```
 
+**Nested** foreach
+
+```r
+k=1
+foreach(i=1:4) %:%
+   foreach(j=1:4) %do%{
+      max.eig(k,1)
+      k=k+1
+    }      
+```
+
 using doParallel
 ========================================================
 

@@ -10,7 +10,7 @@ INTRODUCTION TO R PROGRAMMING
 
 1.Input to R
 ========================================================
-In R, the **>** is command prompt
+In R, the **">"** is command prompt
 
 ```r
 getwd()
@@ -426,7 +426,7 @@ if (a>3){
 
 Syntax
 ```
-If (<condition 1>){
+if (<condition 1>){
   #do task 1
 } else if (<condition 2>) {
   #do task 2

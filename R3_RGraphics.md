@@ -160,7 +160,7 @@ library(ggplot2)
 ========================================================
 ## Basic component of ggplot
 - A	**data	frame**	
-- **aesthetic mappings**:	how	data	are	mapped	to	color,	size		
+- **aes**: aesthetic mappings showing	how	data	are	mapped	to	color,	size		
 - **geoms**:	geometric	objects	like	points,	lines,	shapes.		
 - **facets**:	for	conditional	plots.		
 - **stats**:	statistical	transformations	like	binning,	quanti les,	
@@ -172,15 +172,14 @@ smoothing.
 ## Type of ggplot:
 - Basic **qplot**
     - Same as plot in Base plot
-    - Syntax in between Base plot and Lattice
-    - Nice graphics
+    - Nicer graphics than Base plot
     - Difficult for customize
 - Advanced **ggplot**
     - Flexible with many built-in function
 
 ========================================================
 ## Basic qplot: Scatter plot
-- Plots are made of **aesthetic** (size, shape, color) and **geom** (points, lines)
+- Plots are made of **aes** (size, shape, color) and **geom** (points, lines)
 - Look for data in frame (or from parent directory)
 
 ```r
@@ -191,16 +190,15 @@ qplot(x,y,color,data,geom="point") #aesthetic+data+geometry
 - Base plot
 
 ```r
-data(iris)
 qplot(Sepal.Length, Sepal.Width, data=iris)
 ```
 
 ===================
-- Add aesthetic (size, shape, color)
+- Add aesthetic (shape, color)
 
 ```r
 qplot(Sepal.Length, Petal.Length, data=iris,
-      color=factor(Species),size=factor(Species),
+      color=factor(Species),
       shape=factor(Species)) #aesthetic
 ```
 - Add geom (points, lines)

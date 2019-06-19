@@ -10,8 +10,6 @@ Course Content:
 - Principles of analytic graphics
 - Plotting systems and graphics devices in R
 - The base, lattice, and ggplot2 plotting systems in R
-- Clustering methods
-- Dimension reduction techniques
 
 Exploratory graph
 ========================================================
@@ -21,13 +19,6 @@ Exploratory graph
 - To suggest modeling strategies
 - To "debug" analyses
 - To communicate results
-
-### Characteristics of exploratory graphs 
-- They are made quickly
-- A large number are made
-- The goal is for personal understanding
-- Axes/legends are generally cleaned up (later)
-- Color/size are primarily used for information
 
 Plotting System
 ================================
@@ -130,8 +121,6 @@ plot(mtcars$mpg,mtcars$wt,main="Car Fuel vs Weight",
      col = mtcars$cyl,pch=16,cex=3)
 legend("topright",legend=c(8,6,4),pch=16,cex=3,
        col=c("grey","magenta","blue"))
-dev.copy(png,"test.png") #Copy plot to png file
-dev.off() #Close PNG device
 ```
 
 Graphics Devices
@@ -153,6 +142,7 @@ The most common place for a plot to be "sent" is the screen device
 
 ```
 dev.copy(png,"filename.png")
+dev.off() # to close all the graphical devices
 ```
 
 Plotting with ggplot
@@ -161,7 +151,6 @@ Plotting with ggplot
 - Grammar of Graphics by Leland Wilkinson
 - Written by Hadley Wickham - a grad student at Iowa State
 - Third graphic system in for **R** (along with **Base** and **Lattice**)
-
 
 ```r
 install.packages("ggplot2")

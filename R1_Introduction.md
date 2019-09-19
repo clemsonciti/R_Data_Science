@@ -102,9 +102,8 @@ class(d)
 A vector that contains objects from different class is call **list**
 
 ```r
-list1 <- c(str,a,b,c,d)
+list1 <- list(str,a,b,c,d)
 list1
-list1[27]
 ```
 5.Number
 ========================================================

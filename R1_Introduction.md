@@ -503,6 +503,26 @@ squareroot <- function(a){
 }
 squareroot(49)
 ```
+
+Function to create multiple outputs
+
+```
+f <- function(arguments){
+  #do function task
+  output <- list(out1=out1,out2=out2,out3=out3)
+}
+```
+
+R built-in function of square root and sum
+
+```r
+sqsum <- function(a){
+  sq <- a^0.5
+  sumsq <- a+sq  
+  output <- list(sq=sq, sumsq=sumsq)
+}
+```
+
 20.Function: Dates
 ==================
 function **as.Date()**

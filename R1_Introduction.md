@@ -273,6 +273,9 @@ names(iris)
 #Change name
 names(iris) <- c("a", "b", "c","d","e")
 head(iris)
+
+#Change name for particular columns:
+names(iris)[4] <- "new_name"
 ```
 14.Reading and Writing Tables
 ===================

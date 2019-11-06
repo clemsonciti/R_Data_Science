@@ -409,7 +409,7 @@ Control the flow of program execution:
 ### If
 Syntax
 ```
-If (<condition>){
+if (<condition>){
   #do task 1
 } else {
   #do task 2

@@ -289,10 +289,10 @@ Most popular syntax for reading table in R
 
 ## Writing Table
 Similarly there are syntax for writing table:
-- **write.table**: read table in text format
-- **write.csv**: read table in csv format
-- **write.xlsx**: read table in excel format (require xlsx packages)
-- **writeLines**: read lines of a text file
+- **write.table**: write table in text format
+- **write.csv**: write table in csv format
+- **write.xlsx**: write table in excel format (require xlsx packages)
+- **writeLines**: write lines of a text file
 
 ===================
 ## Examples

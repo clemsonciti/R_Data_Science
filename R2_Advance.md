@@ -144,6 +144,7 @@ Rprof()
 lm(y~x)
 runif(1000)
 sample(120,100)
+Sys.sleep(5)
 Rprof(NULL)
 summaryRprof()
 ```

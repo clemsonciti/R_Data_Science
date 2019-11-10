@@ -369,6 +369,7 @@ gg + stat_density_2d(aes(fill=..level..),
 ### Geographic visualization with ggplot
 
 ```r
+library(maps)
 states <- map_data("state")
 ggplot(data = states)+
   geom_polygon(aes(x=long,y=lat,fill=region),

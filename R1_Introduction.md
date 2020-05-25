@@ -376,6 +376,7 @@ a
 ind <- is.nan(a)
 ind
 a[ind]
+a[is.nan(a)]
 a[!ind]
 ```
 

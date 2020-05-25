@@ -131,7 +131,7 @@ i
 ```
 6.Vector
 ========================================================
-A vector of objects can be created using **c()** function
+A vector of objects can be created using **c()** function #c stands for combine
 
 ```r
 str <- c("a","b","c")

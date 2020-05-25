@@ -187,11 +187,20 @@ Another way to create matrices
 ```r
 m <- 1:12
 dim(m) <- c(3,4)
-m
+```
+
+Working with matrix
+
+```r
+mr <- matrix(runif(9),3,3)
 #Transpose matrics
-t(m)
+t(mr)
 #Diagonal of matrics
-diag(m)
+diag(mr)
+#Determinant
+det(mr)
+#Inverse
+solve(mr)
 ```
 9.Merging Matrices
 ========================================================

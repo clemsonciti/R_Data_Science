@@ -73,7 +73,7 @@ getwd()
 - characters **a**, **b**
 - numeric: **2.3**
 - interger: **5** or **5L**
-- complex: **2e+3**
+- complex: **2+3i** #consists of real and imaginary number
 - logical: **TRUE**/**FALSE**
 
 

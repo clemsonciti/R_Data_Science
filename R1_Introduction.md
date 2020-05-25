@@ -13,11 +13,7 @@ INTRODUCTION TO R PROGRAMMING
 In R, the **">"** is command prompt
 
 ```r
-getwd()
-setwd("C:/R/")
-?getwd #getting help
 rm(list=ls()) #clean memory
-dev.off()  #remove existing plots
 ```
 
 Symbol **<-** is assignment operator

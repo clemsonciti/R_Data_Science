@@ -138,7 +138,7 @@ str <- c("a","b","c")
 a   <- c(4,5.6,20)
 b   <- c("TRUE","FALSE")
 ```
-A vector having different objects: **coercion **
+A vector having different objects: **coercion**
 
 ```r
 str1 <- c("a","b","c",5, 4.5)

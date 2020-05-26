@@ -257,18 +257,19 @@ is.infinite(v)
 ### Examples
 
 ```r
-data(iris)
-dim(iris)
-head(iris)
+df <- data.frame(data=sample(12),title=LETTERS[sample(12)])
+dim(df)
+head(df)
+names(df)
+nrow(df)
+ncol(df)
 ```
-
-
 
 ```r
-names(iris)
-nrow(iris)
-ncol(iris)
+#Check with data iris
+data(iris)
 ```
+
 13.Names
 ========================================================
 R Objects have names

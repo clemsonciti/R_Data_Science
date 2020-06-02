@@ -236,6 +236,8 @@ stopCluster(cl)
 ========================================================
 
 - Login to your Palmetto account
+https://www.palmetto.clemson.edu/palmetto/userguide_basic_usage.html#logging-in
+
 - Request a compute node:
 
 ```

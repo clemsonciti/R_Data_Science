@@ -140,12 +140,12 @@ In order to know all functions, Profiler is used **Rprof**
 
 
 ```r
-Rprof()
+Rprof()  # Turn on the profiler
 lm(y~x)
-runif(1000)
-sample(120,100)
+runif(10^5)
+sample(12*10^5,10^5)
 Sys.sleep(5)
-Rprof(NULL)
+Rprof(NULL)   # Turn off the profiler
 summaryRprof()
 ```
 

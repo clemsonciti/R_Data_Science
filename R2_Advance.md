@@ -225,12 +225,6 @@ system.time(foreach(i=1:200, .combine='c') %dopar% max.eig(i,1))
 stopCluster(cl)
 ```
 
-Note, in Linux/Macs, use **doMC** instead of **doParallel**
-```r
-library(doMC)
-registerDoMC(cl)
-stopCluster(cl)
-```
 
 8.Configure and run R in Clemson University's fastest supercomputer: Palmetto;
 ========================================================
@@ -251,6 +245,7 @@ $ module load R/3.6.0
 - Open R and run in Interactive mode:
 ```
 $ R
+> install.packages("doParallel")
 ```
 
 - Run R in batch mode

@@ -254,24 +254,3 @@ $ Rscript a.R
 $ R CMD BATCH a.R # Will write separate output file
 ```
 
-
-9.How to run R in JupyterHub in Palmetto (large data debugging)
-========================================================
-
-Documentation: 
-https://www.palmetto.clemson.edu/palmetto/jupyterhub_index.html
-
-Spawning a Jupyterhub with minimum resources
-
-Open R/3.4.2 in Jupyter Notebook
-
-Execute some test runs
-```{r}
-library(ggplot2)
-set.seed(12)
-x <- rnorm(500000,mean=0,sd=1)
-a <- 30
-b <- rnorm(500000,20,2)
-y <- a*x+b
-qplot(x,y)
-```

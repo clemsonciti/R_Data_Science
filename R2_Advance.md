@@ -240,7 +240,7 @@ $ qsub -I -l select=1:ncpus=2:mem=8gb,walltime=1:00:00
 - Load R module
 
 ```
-$ module load R/3.6.0
+$ module load r/3.6.0-gcc/8.3.1
 ```
 - Open R and run in Interactive mode:
 ```

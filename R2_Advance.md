@@ -235,7 +235,7 @@ https://www.palmetto.clemson.edu/palmetto/userguide_basic_usage.html#logging-in
 - Request a compute node:
 
 ```
-$ qsub -I -l select=1:ncpus=2:mem=8gb,walltime=1:00:00
+$ qsub -I -l select=1:ncpus=4:mem=32gb:interconnect=fdr,walltime=1:00:00
 ```
 - Load R module
 

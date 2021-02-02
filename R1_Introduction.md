@@ -307,7 +307,7 @@ The following csv files are downloaded from website:
 ```r
 #https://support.spatialkey.com/spatialkey-sample-csv-data/
 #Read sale transaction file:
-saledata <- read.csv("http://samplecsvs.s3.amazonaws.com/SalesJan2009.csv")
+saledata <- read.csv("https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv")
 
 dim(saledata)
 names(saledata)

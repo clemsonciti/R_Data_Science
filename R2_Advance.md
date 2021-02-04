@@ -225,6 +225,28 @@ system.time(foreach(i=1:200, .combine='c') %dopar% max.eig(i,1))
 stopCluster(cl)
 ```
 
+Using built-in Parallel inside packages
+========================================================
+
+Many packages have built-in paralle function. Here we use a bootstraping package: boot
+
+```r
+library(boot)
+# function to obtain regression weights
+bs <- function(formula, data, indices) {
+  d <- data[indices,] # allows boot to select sample
+  fit <- lm(formula, d)
+  return(coef(fit))
+}
+# bootstrapping with 1000 replications
+system.time(results <- boot(data=mtcars, statistic=bs,
+                R=10000, formula=mpg~wt+disp))
+
+system.time(results <- boot(data=mtcars, statistic=bs,
+                R=10000, formula=mpg~wt+disp,
+                parallel = "snow",ncpus=2))
+
+```
 
 8.Configure and run R in Clemson University's fastest supercomputer: Palmetto;
 ========================================================

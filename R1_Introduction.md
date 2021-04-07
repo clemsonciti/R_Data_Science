@@ -15,6 +15,7 @@ In R, the **">"** is command prompt
 ```r
 rm(list=ls()) #clean memory
 ```
+![image](https://user-images.githubusercontent.com/43855029/113925458-0a26f000-97b9-11eb-8527-84aaffc4a9c7.png)
 
 Symbol **<-** is assignment operator
 

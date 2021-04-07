@@ -225,6 +225,26 @@ system.time(foreach(i=1:200, .combine='c') %dopar% max.eig(i,1))
 stopCluster(cl)
 ```
 
+using Parallel and parLapply (Note: this does not work in Windows, mostly applicable to run in Palmetto)
+========================================================
+Check number of available processing cpus:
+
+```r
+library(Parallel)
+co <- detectCores()-1
+cl <- makePSOCKcluster(co)
+setDefaultCluster(cl)
+```
+Apply **parLapply**
+
+```r
+#Load necessary packages on the cluster workers
+clusterExport(NULL, c('max.eig'))
+system.time(foreach(i=1:200, .combine='c') %do% max.eig(i,1))
+system.time(parLapply(NULL, 1:200, function(z) max.eig(z,1)))
+stopCluster(cl)
+```
+
 Using built-in Parallel inside packages
 ========================================================
 
